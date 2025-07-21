@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zontal Arcade - Category</title>
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="preload" href="assets/games.json" as="fetch" crossorigin>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.pexels.com https://placehold.co data:;">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&fit=crop" width="48" height="48" alt="Zontal Arcade Logo" loading="lazy">
+                <span>Zontal Arcade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html" class="active">Categories</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-zon">
+        <section class="search-section">
+            <div class="search-bar">
+                <form role="search" id="searchForm">
+                    <input type="search" id="searchInput" placeholder="Search games..." aria-label="Search through Zontal games">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="search-loading" id="searchLoading">Loading...</div>
+            <div class="search-results" id="searchResults">
+                <h2>Search Results</h2>
+                <div class="masonry-grid" id="searchGrid"></div>
+            </div>
+        </section>
+    </div>
+    <section class="all-games">
+        <h2 id="sectionTitle">Category Games</h2>
+        <div id="zon_games" class="masonry-grid"></div>
+        <button id="loadMore" style="display:none;padding:.75rem 1.5rem;background:#10b981;color:#fff;border:none;border-radius:.5rem;cursor:pointer;margin:1rem auto;display:block">Load More</button>
+    </section>
+    <footer>
+        <p>© 2025 Zontal Arcade Platform. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+    <script defer>
+       const category = new URLSearchParams(window.location.search).get('category') || 'Action';
+    </script>
+    <script defer src="assets/js/category.js"></script>
+</body>
+</html>

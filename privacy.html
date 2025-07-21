@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zontal Arcade - Privacy Policy</title>
+    <style>
+        *,:after,:before{box-sizing:border-box}
+        body{font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.6;background:linear-gradient(135deg,#1e293b 0,#0f172a 100%);color:#e2e8f0;overflow-x:hidden;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        .container-zon{max-width:1320px;margin:0 auto;padding:1.5rem}
+        header{background:rgba(30,41,59,.9);border-bottom:1px solid #334155;padding:1.5rem 0;position:sticky;top:0;z-index:10;box-shadow:0 4px 12px rgba(0,0,0,.3);border-radius:0 0 8px 8px;backdrop-filter:blur(5px)}
+        .header-content{max-width:1320px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+        .logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;transition:transform .2s ease}
+        .logo img{width:48px;height:48px;border-radius:50%;transition:transform .2s ease}
+        .logo:hover img{transform:scale(1.1)}
+        .logo span{font-size:2.2rem;font-weight:800;color:#fff;background:linear-gradient(90deg,#10b981,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 1px 2px rgba(0,0,0,.5);text-transform:uppercase;letter-spacing:.05em}
+        .nav-links{display:flex;gap:1.5rem;align-items:center;transition:all .3s ease}
+        .nav-links a{color:#e2e8f0;font-weight:600;text-decoration:none;font-size:1.2rem;padding:.25rem .5rem;transition:all .2s ease;position:relative}
+        .nav-links a:hover{color:#10b981;background:rgba(255,255,255,.1);border-radius:4px}
+        .nav-links a:after{content:'';position:absolute;width:0;height:2px;background:#10b981;left:0;bottom:-4px;transition:width .2s ease}
+        .nav-links a:hover:after{width:100%}
+        .nav-links a.active{color:#10b981;font-weight:700;background:rgba(255,255,255,.15);border-radius:4px}
+        .hamburger{display:none;cursor:pointer;width:32px;height:24px;position:relative;transition:all .4s ease}
+        .hamburger span{background:#e2e8f0;height:4px;width:100%;position:absolute;left:0;border-radius:2px;transition:all .4s ease}
+        .hamburger span:nth-child(1){top:0}
+        .hamburger span:nth-child(2){top:10px}
+        .hamburger span:nth-child(3){top:20px}
+        .hamburger.active span:nth-child(1){transform:rotate(45deg);top:10px}
+        .hamburger.active span:nth-child(2){opacity:0}
+        .hamburger.active span:nth-child(3){transform:rotate(-45deg);top:10px}
+        .content-section{max-width:800px;margin:2rem auto;padding:1.5rem}
+        .content-section h1{font-size:2.5rem;font-weight:800;color:#fff;background:linear-gradient(90deg,#10b981,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:1rem}
+        .content-section h2{font-size:1.8rem;font-weight:700;color:#f8fafc;margin:1.5rem 0 .5rem}
+        .content-section p{font-size:1.1rem;color:#cbd5e1;margin-bottom:1rem}
+        .content-section a{color:#10b981;text-decoration:none}
+        .content-section a:hover{text-decoration:underline}
+        footer{background:#1e293b;padding:1.5rem;text-align:center;border-top:1px solid #334155;margin-top:2rem}
+        footer p{font-size:.9rem;color:#cbd5e1}
+        @media(max-width:1024px){
+            header{padding:.75rem 0}
+            .header-content{flex-direction:column;align-items:center;gap:.5rem}
+            .logo{margin-bottom:.5rem}
+            .nav-links{gap:1rem}
+            .nav-links a{font-size:1.1rem}
+            .content-section h1{font-size:2rem}
+            .content-section h2{font-size:1.5rem}
+        }
+        @media(max-width:767px){
+            .header-content{flex-direction:row;align-items:center;justify-content:space-between}
+            .nav-links{display:none;flex-direction:column;gap:.5rem;position:absolute;top:100%;left:0;right:0;background:rgba(30,41,59,.95);padding:1.5rem;border-bottom:1px solid #334155;border-radius:0 0 8px 8px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+            .nav-links.active{display:flex}
+            .hamburger{display:block}
+            .logo span{font-size:1.8rem}
+            .logo img{width:36px;height:36px}
+            .nav-links a{font-size:1rem;padding:.25rem}
+            .content-section{padding:1rem}
+            .content-section h1{font-size:1.8rem}
+            .content-section h2{font-size:1.3rem}
+            .content-section p{font-size:1rem}
+        }
+        @media(max-width:480px){
+            .content-section h1{font-size:1.5rem}
+            .content-section h2{font-size:1.2rem}
+            .content-section p{font-size:.9rem}
+        }
+    </style>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.pexels.com https://placehold.co data:;">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&fit=crop" width="48" height="48" alt="Zontal Arcade Logo" loading="lazy">
+                <span>Zontal Arcade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-zon">
+        <section class="content-section">
+            <h1>Privacy Policy</h1>
+            <p>Last updated: July 6, 2025</p>
+            <p>At Zontal Arcade, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our platform.</p>
+            <h2>1. Information We Collect</h2>
+            <p>We may collect the following types of information:</p>
+            <ul>
+                <li><strong>Non-Personal Information</strong>: We use local storage to save your game preferences, such as favorite games and user ratings. This data is stored locally on your device and is not transmitted to our servers.</li>
+                <li><strong>Usage Data</strong>: We may collect anonymized data about how you interact with our platform, such as pages visited and games played, to improve our services.</li>
+            </ul>
+            <h2>2. How We Use Your Information</h2>
+            <p>The information we collect is used to:</p>
+            <ul>
+                <li>Enhance your gaming experience by saving your preferences locally.</li>
+                <li>Analyze usage trends to improve our platform’s performance and content.</li>
+            </ul>
+            <h2>3. Sharing Your Information</h2>
+            <p>We do not sell, trade, or share your personal information with third parties, except as required by law or to protect our rights.</p>
+            <h2>4. Third-Party Services</h2>
+            <p>Some games on our platform are hosted by third-party providers (e.g., <a href="https://igroutka.ru">igroutka.ru</a>). These providers may have their own privacy policies, and we encourage you to review them.</p>
+            <h2>5. Security</h2>
+            <p>We implement reasonable security measures to protect your data. However, no online platform can guarantee complete security, and you use our services at your own risk.</p>
+            <h2>6. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last updated” date.</p>
+            <h2>7. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@zontalarcade.com">support@zontalarcade.com</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Zontal Arcade Platform. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+    <script defer>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.setAttribute('tabindex', '0');
+        hamburger.addEventListener('click', () => {
+            const expanded = hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', expanded);
+        });
+
+        hamburger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                hamburger.click();
+            }
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                navLinks.querySelectorAll('a').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(() => console.log('Service Worker registered'))
+                .catch(error => console.error('Service Worker registration failed:', error));
+        }
+    </script>
+</body>
+</html>

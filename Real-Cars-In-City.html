@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="pageTitle">Zontal Arcade</title>
+   <link rel="stylesheet" href="assets/css/game.css">
+   <script defer src="assets/js/game.js"></script>
+    <link rel="preload" href="assets/games.json" as="fetch" crossorigin>
+ </head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&fit=crop" width="48" height="48" alt="Zontal Arcade Logo" loading="lazy">
+                <span>Zontal Arcade</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html" class="active">Categories</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-zon">
+        <section class="search-section">
+            <div class="search-bar">
+                <form role="search" id="searchForm">
+                    <input type="search" id="searchInput" placeholder="Search games..." aria-label="Search through Zontal games">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="search-loading" id="searchLoading">Loading...</div>
+            <div class="search-results" id="searchResults">
+                <h2>Search Results</h2>
+                <div class="masonry-grid" id="searchGrid"></div>
+            </div>
+        </section>
+        <section class="game-container">
+            <div class="game-image">
+                <img id="gameImage" src="https://placehold.co/100x100" alt="Game Image" loading="lazy">
+            </div>
+            <div class="game-header">
+                <h1 id="gameName">Loading...</h1>
+                <div class="game-meta">
+                    <span id="gameCategory">Category: Loading... | Rating: <span id="averageRating">0</span>/5</span>
+                    <div class="rating" id="gameRating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-section">
+                <p>Rate this game:</p>
+                <div class="user-rating" id="userRating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+            </div>
+            <div class="game-description" id="gameDescription">
+                Loading game description...
+            </div>
+            <div class="game-iframe-container">
+                <iframe id="gameIframe" preload src="https://placehold.co/960x540" title="Game Frame" loading="lazy"></iframe>
+            </div>
+            <div class="game-actions">
+                <button class="fullscreen-btn" id="fullscreenBtn">Enter Fullscreen</button>
+                <button class="favorite-btn" id="favoriteBtn">Add to Favorites</button>
+            </div>
+        </section>
+    </div>
+    <section class="more-games">
+        <h2>More Games</h2>
+        <div id="moreGames" class="masonry-grid"></div>
+        <button id="loadMore" style="display:none;padding:.75rem 1.5rem;background:#10b981;color:#fff;border:none;border-radius:.5rem;cursor:pointer;margin:1rem auto;display:block">Load More</button>
+    </section>
+    <footer>
+        <p>© 2025 Zontal Arcade Platform. All rights reserved.</p>
+    </footer>
+    <script defer>
+       const gameId = 'real-cars-in-city';
+    </script>
+</body>
+</html>
